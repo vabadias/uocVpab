@@ -1,0 +1,1484 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid5"
+    }, {
+      "@id" : "_:genid3"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Boat"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransport"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Bus"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransport"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Plain"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransport"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Train"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransport"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSurveyedTrip"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Boat"
+    }, {
+      "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Bus"
+    }, {
+      "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Plain"
+    }, {
+      "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Train"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoatTrip"
+    }, {
+      "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Flight"
+    }, {
+      "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#TrainTrip"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Couple"
+    }, {
+      "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Family"
+    }, {
+      "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Solo"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "10"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#HighQuality"
+    }, {
+      "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#LowQuality"
+    }, {
+      "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#MediumQuality"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "http://www.w3.org/2001/XMLSchema#minExclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    }, {
+      "@id" : "_:genid8"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "BusinessClass"
+    }, {
+      "@value" : "EconomyClass"
+    }, {
+      "@value" : "First Class"
+    }, {
+      "@value" : "Premium Economy"
+    } ]
+  } ]
+}, {
+  "@id" : "http://creativecommons.org/ns#license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://dbpedia.org/ontology/Airline",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An airline company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Airline company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportCompany"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/ontology/Airport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An airport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Airport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/ontology/Country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://creativecommons.org/ns#license" : [ {
+    "@value" : "Student Work"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Vanesa Abadías"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "An ontology about airline customer satisfaction survey"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "A student work"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "Airline customer satisfaction survey"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An ontology about airline customer satisfaction survey"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "Vanesa Abadías"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Airline customer satisfaction survey"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://dbpedia.org/ontology/"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey/1.0.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#A350",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#AirBusPlain"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#A380",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#AirBusPlain"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#A380-800",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#AirBusPlain"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#AirBusPlain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An airbus plain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Airbus plain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Plain"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Albania",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dbpedia.org/ontology/Country"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Alicante",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dbpedia.org/ontology/Airport"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Australia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dbpedia.org/ontology/Country"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Belfast",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dbpedia.org/ontology/Airport"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Belfast-Alicante",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDestination" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Alicante"
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasOrigin" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Belfast"
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasPassenger" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger4"
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeat" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Economy"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Flight"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Boat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Boat transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Boat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Transport"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoatCompany",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A transport boat company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Transport boat company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportCompany"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoatTrip",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Boat Trip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Boat trip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip"
+  }, {
+    "@id" : "_:genid14"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#BusTrip"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoeingPlain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Boeing plain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Boeing plain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Plain"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Train"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Boeing_737",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoeingPlain"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Boeing_737_900",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoeingPlain"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Bus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Bus transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Bus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Transport"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#BusCompany",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A transport bus company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Transport bus company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportCompany"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#BusTrip",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Bus Trip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Bus trip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip"
+  }, {
+    "@id" : "_:genid15"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Business",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeatType" : [ {
+    "@value" : "BusinessClass"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportSeat"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#BusinessPassenger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Passenger who travel for work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Bussines passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#LeisurePassenger"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Canada",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dbpedia.org/ontology/Country"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Company",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Couple",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Passenger who travel with his/her couple"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Couple passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#LeisurePassenger"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Denmark",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dbpedia.org/ontology/Country"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Doha",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dbpedia.org/ontology/Airport"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Doha-Montreal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDestination" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Montreal"
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasOrigin" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Doha"
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasPassenger" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger1"
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeat" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Business"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Flight"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Economy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeatType" : [ {
+    "@value" : "EconomyClass"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportSeat"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Family",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Passenger who travel with his/her family"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Family passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#LeisurePassenger"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Faro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dbpedia.org/ontology/Airport"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Faro-Luton",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDestination" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Luton"
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasOrigin" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Faro"
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasPassenger" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger3"
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeat" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Economy"
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransport" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Boeing_737_900"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Flight"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#First_Class",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeatType" : [ {
+    "@value" : "First Class"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportSeat"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Flight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip"
+  }, {
+    "@id" : "_:genid16"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Germany",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dbpedia.org/ontology/Country"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#HighQuality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "High quality result"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "High quality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#SurveyResults"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Israel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dbpedia.org/ontology/Country"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#LeisurePassenger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Passenger who travel for leisure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Leisure passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#London_Heathrow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dbpedia.org/ontology/Airport"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#LowQuality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Low quality result"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Low quality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#SurveyResults"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Luton",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransport" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Boeing_737_900"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dbpedia.org/ontology/Airport"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#MediumQuality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Medium quality result"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Medium quality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#SurveyResults"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Montreal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dbpedia.org/ontology/Airport"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasCountry" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#United_Kingdom"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Solo"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasCountry" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Canada"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Couple"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasCountry" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#United_Kingdom"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Family"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasCountry" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#United_Kingdom"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Couple"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Perth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dbpedia.org/ontology/Airport"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Plain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Plain transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Plain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Transport"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Premium_Economy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeatType" : [ {
+    "@value" : "Premium Economy"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportSeat"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Qatar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dbpedia.org/ontology/Airline"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Ryanair",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dbpedia.org/ontology/Airline"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Seat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A concret seat of an event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Seat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Solo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Passenger who travel alone"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Solo passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#LeisurePassenger"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A survey"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Survey"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasComment" : [ {
+    "@value" : "Flew back from Faro to London Luton Friday 2nd February. Ryanair in both directions was bang on time and smooth flights in both directions.  We always sit in Front for more space and this was very comfortable for just under a 3 hour flight. The cabin crew were polite and efficient with nice sense of humour especially and engagement especially Ethan and his female colleague at the front section. For their human touch [unlike sometimes the stand offish BA crews] merit a 10/10 marking"
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDatePublished" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-02-03T00:00:00"
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#unsignedInt",
+    "@value" : "0"
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "10"
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSurveyedTrip" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Faro-Luton"
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTitle" : [ {
+    "@value" : "bang on time and smooth flights"
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#isRecommended" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#isVerified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#TripSurvey"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasComment" : [ {
+    "@value" : "Another good affordable flight with Ryanair. On time, pleasant staff at check-in and on board. We use Ryanair as our first choice on every flight we take."
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDatePublished" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-01-26T00:00:00"
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#unsignedInt",
+    "@value" : "1"
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#unsignedInt",
+    "@value" : "10"
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSurveyedTrip" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Belfast-Alicante"
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTitle" : [ {
+    "@value" : "Another good affordable flight"
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#isRecommended" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#isVerified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#TripSurvey"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasComment" : [ {
+    "@value" : "The delay of my flight from Haneda to Doha caused a bit of chaos upon arrival. Despite my efforts to reach the gate promptly, I was denied boarding due to luggage issues, and the lack of assistance added to the frustration. I paid for an Economy Comfort package, which was supposed to include an aisle seat. However, upon boarding, I was informed that no aisle seats were available, despite assurances beforehand. Additionally, my luggage tag was lost during the boarding pass exchange, leading to further uncertainty upon arrival in London. What was meant to be a 19-hour journey turned into a 27-hour ordeal. When I requested assistance from staff regarding a re-arrangement they promised to get back to me within 5-10 minutes, but no one followed up until I reached out again. The security queue at Heathrow on departure from the UK was incredibly long, with a wait time of about 1.5 hours just to get through. Overall, while the crew onboard was courteous and provided great service, the experience was marred by these inconveniences."
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDatePublished" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-03-02T00:00:00"
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#unsignedInt",
+    "@value" : "3"
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#unsignedInt",
+    "@value" : "1"
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSurveyedTrip" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Tokyo-London"
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTitle" : [ {
+    "@value" : "marred by inconveniences"
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#isRecommended" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#isVerified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#TripSurvey"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#SurveyResults",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Survey Results"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SurveyResults"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Tokyo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dbpedia.org/ontology/Airport"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Tokyo-London",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDestination" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#London_Heathrow"
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasOrigin" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Tokyo"
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasPassenger" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger0"
+  } ],
+  "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeat" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Economy"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Flight"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Train",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Train"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Train"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Transport"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#TrainCompany",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A train transport company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Train transport company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportCompany"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#TrainTrip",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Train trip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Train trip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip"
+  }, {
+    "@id" : "_:genid17"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Transport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A mean of transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportCompany",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A transport company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Transport company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Company"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportSeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A concret seat of a trip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Transport Seat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Seat"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A concrete trip for a passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Trip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#TripSurvey",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Survey of a trip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Trip survey"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey"
+  }, {
+    "@id" : "_:genid18"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#United_Kingdom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dbpedia.org/ontology/Country"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasComment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The element has a Comment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasComment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasCompany",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Has a company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasCompany"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Company"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransportOfCompany"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasCountry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The element has a Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasCountry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://dbpedia.org/ontology/Country"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasPassengerCountry"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The element has a Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasFlownDate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDatePublished",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "has Published Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasPublishedDate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDestination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The element has a Destination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasDestination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://dbpedia.org/ontology/Airport"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasFlightDestination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Destination of the flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://dbpedia.org/ontology/Airport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasFlightDestination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Flight"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasFlightOrigin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The origin of the flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://dbpedia.org/ontology/Airport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasFlightOrigin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The element has a Id"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasId"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#unsignedInt"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasOrigin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The element has a Origin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasOrigin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://dbpedia.org/ontology/Airport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasPassenger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The trip has a Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasPassenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTripOfPassenger"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasPassengerCountry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The country has passenger who travel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://dbpedia.org/ontology/Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasPassengerCountry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasRating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The element has a Rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasRating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasResult",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The result of a survey"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasResult"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#SurveyResults"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Te trip has aSeat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasSeat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportSeat"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTripOfSeat"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeatId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A seat id"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Seat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasSeatId"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeatType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The element has seat type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Seat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasSeatType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid6"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSurvey",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The element has a survey"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasSurvey"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#TripSurvey"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSurveyedTrip",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The element has a trip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#TripSurvey"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasSurveyedTrip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTitle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The element has a Title"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasTitle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The element has a transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasTransport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransportOfCompany",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport belonging to a company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasTransportOfCompany"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTrip",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The transport has a trip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasTrip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTripOfPassenger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The trip o a passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasTripOfPassenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTripOfSeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The trip of the seat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportSeat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasTripOfSeat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#isRecommended",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The element is Recommended"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isRecommended"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#isVerified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The element is verified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isVerified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

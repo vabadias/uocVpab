@@ -1,0 +1,1853 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/vocommons/voaf", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://dbpedia.org/ontology", "http://www.uoc.edu/ontologies/vabad/airlinesurvey" ],
+    "title" : {
+      "undefined" : "Airline customer satisfaction survey"
+    },
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "version" : "1",
+    "author" : [ "Vanesa Abadías" ],
+    "description" : {
+      "undefined" : "An ontology about airline customer satisfaction survey"
+    },
+    "labels" : {
+      "undefined" : "Airline customer satisfaction survey"
+    },
+    "comments" : {
+      "undefined" : "An ontology about airline customer satisfaction survey"
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "A student work",
+        "type" : "label"
+      }, {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "Student Work",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Vanesa Abadías",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "Vanesa Abadías",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Airline customer satisfaction survey",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "20",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#BusinessPassenger",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BusinessPassenger",
+      "undefined" : "Bussines passenger"
+    },
+    "comment" : {
+      "undefined" : "Passenger who travel for work"
+    },
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Bus",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Bus",
+      "undefined" : "Bus"
+    },
+    "comment" : {
+      "undefined" : "Bus transport"
+    },
+    "id" : "2",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoatCompany",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BoatCompany",
+      "undefined" : "Transport boat company"
+    },
+    "comment" : {
+      "undefined" : "A transport boat company"
+    },
+    "id" : "8",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://dbpedia.org/ontology/Airline",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Airline",
+      "undefined" : "Airline company"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Qatar",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "Qatar"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Ryanair",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "Ryanair"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "An airline company"
+    },
+    "attributes" : [ "external" ],
+    "id" : "10",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#HighQuality",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HighQuality",
+      "undefined" : "High quality"
+    },
+    "comment" : {
+      "undefined" : "High quality result"
+    },
+    "id" : "11",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Passenger",
+      "undefined" : "Passenger"
+    },
+    "subClasses" : [ "0", "13" ],
+    "comment" : {
+      "undefined" : "A passenger"
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "20",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#unsignedInt",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "unsignedInt"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "33",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "35",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Boat",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Boat",
+      "undefined" : "Boat"
+    },
+    "comment" : {
+      "undefined" : "Boat transport"
+    },
+    "id" : "36",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Family",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Family",
+      "undefined" : "Family passenger"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger3",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "Passenger3"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Passenger who travel with his/her family"
+    },
+    "id" : "37",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://purl.org/vocommons/voaf#Vocabulary",
+    "baseIri" : "http://purl.org/vocommons/voaf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vocabulary"
+    },
+    "individuals" : [ {
+      "iri" : "http://dbpedia.org/ontology/",
+      "baseIri" : "http://dbpedia.org",
+      "labels" : { }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://dbpedia.org/ontology/Country",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Country",
+      "undefined" : "Country"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#United_Kingdom",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "United_Kingdom"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Canada",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "Canada"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Germany",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "Germany"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Albania",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "Albania"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Denmark",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "Denmark"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Australia",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "Australia"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Israel",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "Israel"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A country"
+    },
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#LeisurePassenger",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LeisurePassenger",
+      "undefined" : "Leisure passenger"
+    },
+    "subClasses" : [ "37", "46", "50" ],
+    "comment" : {
+      "undefined" : "Passenger who travel for leisure"
+    },
+    "id" : "13",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#AirBusPlain",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AirBusPlain",
+      "undefined" : "Airbus plain"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#A380",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "A380"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#A380-800",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "A380-800"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#A350",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "A350"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "An airbus plain"
+    },
+    "id" : "66",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Plain",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Plain",
+      "undefined" : "Plain"
+    },
+    "subClasses" : [ "54", "66" ],
+    "comment" : {
+      "undefined" : "Plain transport"
+    },
+    "id" : "67",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoeingPlain",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BoeingPlain",
+      "undefined" : "Boeing plain"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Boeing_737",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "Boeing_737"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Boeing_737_900",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "Boeing_737_900"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A Boeing plain"
+    },
+    "id" : "54",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Company",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Company",
+      "undefined" : "Company"
+    },
+    "subClasses" : [ "9" ],
+    "comment" : {
+      "undefined" : "A company"
+    },
+    "id" : "79"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Flight",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Flight",
+      "undefined" : "Flight"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Faro-Luton",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "Faro-Luton"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Belfast-Alicante",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "Belfast-Alicante"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Doha-Montreal",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "Doha-Montreal"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Tokyo-London",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "Tokyo-London"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A Flight"
+    },
+    "id" : "30",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#BusCompany",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BusCompany",
+      "undefined" : "Transport bus company"
+    },
+    "comment" : {
+      "undefined" : "A transport bus company"
+    },
+    "id" : "84",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#TrainCompany",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TrainCompany",
+      "undefined" : "Train transport company"
+    },
+    "comment" : {
+      "undefined" : "A train transport company"
+    },
+    "id" : "86",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#BusTrip",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BusTrip",
+      "undefined" : "Bus trip"
+    },
+    "comment" : {
+      "undefined" : "A Bus Trip"
+    },
+    "id" : "76",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportSeat",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportSeat",
+      "undefined" : "Transport Seat"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Premium_Economy",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "Premium_Economy"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Business",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "Business"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#First_Class",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "First_Class"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Economy",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "Economy"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A concret seat of a trip"
+    },
+    "id" : "70",
+    "superClasses" : [ "39" ]
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportCompany",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportCompany",
+      "undefined" : "Transport company"
+    },
+    "subClasses" : [ "86", "8", "10", "84" ],
+    "comment" : {
+      "undefined" : "A transport company"
+    },
+    "id" : "9",
+    "superClasses" : [ "79" ]
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Solo",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Solo",
+      "undefined" : "Solo passenger"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger0",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "Passenger0"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Passenger who travel alone"
+    },
+    "id" : "46",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Transport",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Transport",
+      "undefined" : "Transport"
+    },
+    "subClasses" : [ "2", "36", "67", "55" ],
+    "comment" : {
+      "undefined" : "A mean of transport"
+    },
+    "id" : "3"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#TrainTrip",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TrainTrip",
+      "undefined" : "Train trip"
+    },
+    "comment" : {
+      "undefined" : "A Train trip"
+    },
+    "id" : "61",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Seat",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Seat",
+      "undefined" : "Seat"
+    },
+    "subClasses" : [ "70" ],
+    "comment" : {
+      "undefined" : "A concret seat of an event"
+    },
+    "id" : "39"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#LowQuality",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LowQuality",
+      "undefined" : "Low quality"
+    },
+    "comment" : {
+      "undefined" : "Low quality result"
+    },
+    "id" : "42",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#TripSurvey",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TripSurvey",
+      "undefined" : "Trip survey"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey1",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "Survey1"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey0",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "Survey0"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey3",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "Survey3"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Survey of a trip"
+    },
+    "id" : "65",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://dbpedia.org/ontology/Airport",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Airport",
+      "undefined" : "Airport"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Perth",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "Perth"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Montreal",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "Montreal"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Doha",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "Doha"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Faro",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "Faro"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Alicante",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "Alicante"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Luton",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "Luton"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#London_Heathrow",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "London_Heathrow"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Tokyo",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "Tokyo"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Belfast",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "Belfast"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "An airport"
+    },
+    "attributes" : [ "external" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Trip",
+      "undefined" : "Trip"
+    },
+    "subClasses" : [ "30", "76", "74", "61" ],
+    "comment" : {
+      "undefined" : "A concrete trip for a passenger"
+    },
+    "id" : "48"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Train",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Train",
+      "undefined" : "Train"
+    },
+    "comment" : {
+      "undefined" : "A Train"
+    },
+    "id" : "55",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Survey",
+      "undefined" : "Survey"
+    },
+    "subClasses" : [ "65" ],
+    "comment" : {
+      "undefined" : "A survey"
+    },
+    "id" : "15"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#MediumQuality",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MediumQuality",
+      "undefined" : "Medium quality"
+    },
+    "comment" : {
+      "undefined" : "Medium quality result"
+    },
+    "id" : "43",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Couple",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Couple",
+      "undefined" : "Couple passenger"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger4",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "Passenger4"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger1",
+      "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+      "labels" : {
+        "IRI-based" : "Passenger1"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Passenger who travel with his/her couple"
+    },
+    "id" : "50",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#SurveyResults",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SurveyResults",
+      "undefined" : "SurveyResults"
+    },
+    "subClasses" : [ "42", "43", "11" ],
+    "comment" : {
+      "undefined" : "The Survey Results"
+    },
+    "id" : "12"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoatTrip",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BoatTrip",
+      "undefined" : "Boat trip"
+    },
+    "comment" : {
+      "undefined" : "A Boat Trip"
+    },
+    "id" : "74",
+    "superClasses" : [ "48" ]
+  } ],
+  "property" : [ {
+    "id" : "4",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "45",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "51",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "52",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "53",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "57",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "59",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "88",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "105",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "106",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "109",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "110",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "111",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "112",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "113",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "114",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "116",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "117",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "118",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasCountry",
+    "inverse" : "7",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasCountry",
+      "undefined" : "hasCountry"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The element has a Country"
+    },
+    "attributes" : [ "object" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasId",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasId",
+      "undefined" : "hasId"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "The element has a Id"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "20",
+    "subproperty" : [ "21", "22", "23", "7", "24", "25", "26" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDestination",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "hasDestination",
+      "undefined" : "hasDestination"
+    },
+    "domain" : "30",
+    "comment" : {
+      "undefined" : "The element has a Destination"
+    },
+    "attributes" : [ "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeatType",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "hasSeatType",
+      "undefined" : "hasSeatType"
+    },
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "The element has seat type"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "38"
+  }, {
+    "range" : "43",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "41"
+  }, {
+    "range" : "46",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTrip",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "hasTrip",
+      "undefined" : "hasTrip"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "The transport has a trip"
+    },
+    "attributes" : [ "object" ],
+    "id" : "47"
+  }, {
+    "range" : "46",
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "49"
+  }, {
+    "range" : "43",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "51"
+  }, {
+    "range" : "42",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "52"
+  }, {
+    "range" : "55",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#isVerified",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "isVerified",
+      "undefined" : "isVerified"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "The element is verified"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "57"
+  }, {
+    "range" : "37",
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "58"
+  }, {
+    "range" : "13",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasFlightOrigin",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "hasFlightOrigin",
+      "undefined" : "hasFlightOrigin"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "31",
+    "comment" : {
+      "undefined" : "The origin of the flight"
+    },
+    "attributes" : [ "object" ],
+    "id" : "21"
+  }, {
+    "range" : "48",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasComment",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasComment",
+      "undefined" : "hasComment"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "The element has a Comment"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "62"
+  }, {
+    "range" : "12",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "63"
+  }, {
+    "range" : "15",
+    "domain" : "65",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasPassenger",
+    "inverse" : "26",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasPassenger",
+      "undefined" : "hasPassenger"
+    },
+    "domain" : "48",
+    "comment" : {
+      "undefined" : "The trip has a Passenger"
+    },
+    "attributes" : [ "object" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeat",
+    "inverse" : "25",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "hasSeat",
+      "undefined" : "hasSeat"
+    },
+    "domain" : "48",
+    "comment" : {
+      "undefined" : "Te trip has aSeat"
+    },
+    "attributes" : [ "object" ],
+    "id" : "69"
+  }, {
+    "range" : "48",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "71"
+  }, {
+    "range" : "39",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "72"
+  }, {
+    "range" : "48",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "73"
+  }, {
+    "range" : "48",
+    "domain" : "76",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "75"
+  }, {
+    "range" : "3",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasCompany",
+    "inverse" : "24",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "range" : "79",
+    "label" : {
+      "IRI-based" : "hasCompany",
+      "undefined" : "hasCompany"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "Has a company"
+    },
+    "attributes" : [ "object" ],
+    "id" : "78"
+  }, {
+    "range" : "3",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80"
+  }, {
+    "range" : "3",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "81"
+  }, {
+    "range" : "3",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "82"
+  }, {
+    "range" : "9",
+    "domain" : "84",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "83"
+  }, {
+    "range" : "9",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasOrigin",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "hasOrigin",
+      "undefined" : "hasOrigin"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "30",
+    "comment" : {
+      "undefined" : "The element has a Origin"
+    },
+    "attributes" : [ "object" ],
+    "id" : "22"
+  }, {
+    "range" : "9",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "87"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeatId",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "hasSeatId",
+      "undefined" : "hasSeatId"
+    },
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "A seat id"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "88"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "20",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "89"
+  }, {
+    "range" : "67",
+    "domain" : "66",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "90"
+  }, {
+    "range" : "67",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "91"
+  }, {
+    "range" : "9",
+    "domain" : "86",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "92"
+  }, {
+    "range" : "79",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "93"
+  }, {
+    "range" : "13",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "94"
+  }, {
+    "range" : "1",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "95"
+  }, {
+    "range" : "13",
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "96"
+  }, {
+    "range" : "13",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasPassengerCountry",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasPassengerCountry",
+      "undefined" : "hasPassengerCountry"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "The country has passenger who travel"
+    },
+    "attributes" : [ "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransportOfCompany",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasTransportOfCompany",
+      "undefined" : "hasTransportOfCompany"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "79",
+    "comment" : {
+      "undefined" : "Transport belonging to a company"
+    },
+    "attributes" : [ "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasRating",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "hasRating",
+      "undefined" : "hasRating"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "The element has a Rating"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSurveyedTrip",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "hasSurveyedTrip",
+      "undefined" : "hasSurveyedTrip"
+    },
+    "domain" : "65",
+    "comment" : {
+      "undefined" : "The element has a trip"
+    },
+    "attributes" : [ "object" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSurvey",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "hasSurvey",
+      "undefined" : "hasSurvey"
+    },
+    "domain" : "48",
+    "comment" : {
+      "undefined" : "The element has a survey"
+    },
+    "attributes" : [ "object" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDatePublished",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "hasDatePublished",
+      "undefined" : "hasPublishedDate"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "has Published Date"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTripOfPassenger",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "hasTripOfPassenger",
+      "undefined" : "hasTripOfPassenger"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The trip o a passenger"
+    },
+    "attributes" : [ "object" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasFlightDestination",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "hasFlightDestination",
+      "undefined" : "hasFlightDestination"
+    },
+    "domain" : "31",
+    "comment" : {
+      "undefined" : "The Destination of the flight"
+    },
+    "attributes" : [ "object" ],
+    "id" : "102"
+  }, {
+    "range" : "12",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "103"
+  }, {
+    "range" : "12",
+    "domain" : "43",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDate",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "hasDate",
+      "undefined" : "hasFlownDate"
+    },
+    "domain" : "48",
+    "comment" : {
+      "undefined" : "The element has a Date"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasResult",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasResult",
+      "undefined" : "hasResult"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "The result of a survey"
+    },
+    "attributes" : [ "object" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTitle",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "hasTitle",
+      "undefined" : "hasTitle"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "The element has a Title"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "107"
+  }, {
+    "range" : "55",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "108"
+  }, {
+    "range" : "67",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "109"
+  }, {
+    "range" : "55",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "110"
+  }, {
+    "range" : "55",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "111"
+  }, {
+    "range" : "76",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "112"
+  }, {
+    "range" : "30",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#isRecommended",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "isRecommended",
+      "undefined" : "isRecommended"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "The element is Recommended"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "114"
+  }, {
+    "range" : "61",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "115"
+  }, {
+    "range" : "61",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "116"
+  }, {
+    "range" : "2",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "117"
+  }, {
+    "range" : "67",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "118"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTripOfSeat",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "hasTripOfSeat",
+      "undefined" : "hasTripOfSeat"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "70",
+    "comment" : {
+      "undefined" : "The trip of the seat"
+    },
+    "attributes" : [ "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransport",
+    "baseIri" : "http://www.uoc.edu/ontologies/vabad/airlinesurvey",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasTransport",
+      "undefined" : "hasTransport"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "48",
+    "comment" : {
+      "undefined" : "The element has a transport"
+    },
+    "attributes" : [ "object" ],
+    "id" : "23"
+  } ]
+}

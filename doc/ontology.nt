@@ -1,0 +1,806 @@
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.uoc.edu/ontologies/vabad/airlinesurvey/1.0.0> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey> <http://www.w3.org/2002/07/owl#imports> <http://dbpedia.org/ontology/> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey> <http://creativecommons.org/ns#license> "Student Work" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey> <http://purl.org/dc/terms/creator> "Vanesa Abadías" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey> <http://purl.org/dc/terms/description> "An ontology about airline customer satisfaction survey" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey> <http://purl.org/dc/terms/license> "A student work" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey> <http://purl.org/dc/terms/title> "Airline customer satisfaction survey" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "An ontology about airline customer satisfaction survey" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Vanesa Abadías" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey> <http://www.w3.org/2000/01/rdf-schema#label> "Airline customer satisfaction survey" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey> <http://www.w3.org/2002/07/owl#versionInfo> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasCompany
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasCompany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasCompany> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransportOfCompany> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasCompany> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Transport> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasCompany> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Company> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasCompany> <http://www.w3.org/2000/01/rdf-schema#comment> "Has a company" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasCompany> <http://www.w3.org/2000/01/rdf-schema#label> "hasCompany" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasCountry
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasCountry> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasPassengerCountry> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/ontology/Country> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "The element has a Country" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasCountry> <http://www.w3.org/2000/01/rdf-schema#label> "hasCountry" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDestination
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDestination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDestination> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Flight> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDestination> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/ontology/Airport> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDestination> <http://www.w3.org/2000/01/rdf-schema#comment> "The element has a Destination" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDestination> <http://www.w3.org/2000/01/rdf-schema#label> "hasDestination" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasFlightDestination
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasFlightDestination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasFlightDestination> <http://www.w3.org/2000/01/rdf-schema#domain> <http://dbpedia.org/ontology/Airport> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasFlightDestination> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Flight> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasFlightDestination> <http://www.w3.org/2000/01/rdf-schema#comment> "The Destination of the flight" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasFlightDestination> <http://www.w3.org/2000/01/rdf-schema#label> "hasFlightDestination" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasFlightOrigin
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasFlightOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasFlightOrigin> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasFlightOrigin> <http://www.w3.org/2000/01/rdf-schema#domain> <http://dbpedia.org/ontology/Airport> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasFlightOrigin> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Flight> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasFlightOrigin> <http://www.w3.org/2000/01/rdf-schema#comment> "The origin of the flight" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasFlightOrigin> <http://www.w3.org/2000/01/rdf-schema#label> "hasFlightOrigin" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasOrigin
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Flight> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/ontology/Airport> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#comment> "The element has a Origin" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#label> "hasOrigin" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasPassenger
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasPassenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasPassenger> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTripOfPassenger> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasPassenger> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasPassenger> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasPassenger> <http://www.w3.org/2000/01/rdf-schema#comment> "The trip has a Passenger" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasPassenger> <http://www.w3.org/2000/01/rdf-schema#label> "hasPassenger" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasPassengerCountry
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasPassengerCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasPassengerCountry> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasPassengerCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://dbpedia.org/ontology/Country> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasPassengerCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasPassengerCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "The country has passenger who travel" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasPassengerCountry> <http://www.w3.org/2000/01/rdf-schema#label> "hasPassengerCountry" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasResult
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasResult> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasResult> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#SurveyResults> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasResult> <http://www.w3.org/2000/01/rdf-schema#comment> "The result of a survey" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasResult> <http://www.w3.org/2000/01/rdf-schema#label> "hasResult" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeat
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeat> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTripOfSeat> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeat> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeat> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportSeat> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeat> <http://www.w3.org/2000/01/rdf-schema#comment> "Te trip has aSeat" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeat> <http://www.w3.org/2000/01/rdf-schema#label> "hasSeat" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSurvey
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSurvey> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSurvey> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#TripSurvey> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "The element has a survey" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSurvey> <http://www.w3.org/2000/01/rdf-schema#label> "hasSurvey" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSurveyedTrip
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSurveyedTrip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSurveyedTrip> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#TripSurvey> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSurveyedTrip> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSurveyedTrip> <http://www.w3.org/2000/01/rdf-schema#comment> "The element has a trip" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSurveyedTrip> <http://www.w3.org/2000/01/rdf-schema#label> "hasSurveyedTrip" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransport
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransport> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransport> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransport> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Transport> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransport> <http://www.w3.org/2000/01/rdf-schema#comment> "The element has a transport" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransport> <http://www.w3.org/2000/01/rdf-schema#label> "hasTransport" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransportOfCompany
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransportOfCompany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransportOfCompany> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransportOfCompany> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Company> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransportOfCompany> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Transport> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransportOfCompany> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport belonging to a company" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransportOfCompany> <http://www.w3.org/2000/01/rdf-schema#label> "hasTransportOfCompany" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTrip
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTrip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTrip> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Transport> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTrip> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTrip> <http://www.w3.org/2000/01/rdf-schema#comment> "The transport has a trip" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTrip> <http://www.w3.org/2000/01/rdf-schema#label> "hasTrip" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTripOfPassenger
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTripOfPassenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTripOfPassenger> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTripOfPassenger> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTripOfPassenger> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTripOfPassenger> <http://www.w3.org/2000/01/rdf-schema#comment> "The trip o a passenger" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTripOfPassenger> <http://www.w3.org/2000/01/rdf-schema#label> "hasTripOfPassenger" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTripOfSeat
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTripOfSeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTripOfSeat> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTripOfSeat> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportSeat> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTripOfSeat> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTripOfSeat> <http://www.w3.org/2000/01/rdf-schema#comment> "The trip of the seat" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTripOfSeat> <http://www.w3.org/2000/01/rdf-schema#label> "hasTripOfSeat" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasComment
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasComment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasComment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasComment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasComment> <http://www.w3.org/2000/01/rdf-schema#comment> "The element has a Comment" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasComment> <http://www.w3.org/2000/01/rdf-schema#label> "hasComment" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDate
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The element has a Date" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDate> <http://www.w3.org/2000/01/rdf-schema#label> "hasFlownDate" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDatePublished
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDatePublished> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDatePublished> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDatePublished> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDatePublished> <http://www.w3.org/2000/01/rdf-schema#comment> "has Published Date" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDatePublished> <http://www.w3.org/2000/01/rdf-schema#label> "hasPublishedDate" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasId
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#unsignedInt> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasId> <http://www.w3.org/2000/01/rdf-schema#comment> "The element has a Id" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasId> <http://www.w3.org/2000/01/rdf-schema#label> "hasId" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasRating
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasRating> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2001/XMLSchema#maxInclusive> "10"^^<http://www.w3.org/2001/XMLSchema#int> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/2001/XMLSchema#minExclusive> "0"^^<http://www.w3.org/2001/XMLSchema#int> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#int> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasRating> <http://www.w3.org/2000/01/rdf-schema#comment> "The element has a Rating" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasRating> <http://www.w3.org/2000/01/rdf-schema#label> "hasRating" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeatId
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeatId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeatId> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeatId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Seat> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeatId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeatId> <http://www.w3.org/2000/01/rdf-schema#comment> "A seat id" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeatId> <http://www.w3.org/2000/01/rdf-schema#label> "hasSeatId" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeatType
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeatType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeatType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeatType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Seat> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeatType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#oneOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Premium Economy" .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "First Class" .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "EconomyClass" .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "BusinessClass" .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeatType> <http://www.w3.org/2000/01/rdf-schema#comment> "The element has seat type" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeatType> <http://www.w3.org/2000/01/rdf-schema#label> "hasSeatType" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTitle
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "The element has a Title" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTitle> <http://www.w3.org/2000/01/rdf-schema#label> "hasTitle" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#isRecommended
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#isRecommended> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#isRecommended> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#isRecommended> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#isRecommended> <http://www.w3.org/2000/01/rdf-schema#comment> "The element is Recommended" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#isRecommended> <http://www.w3.org/2000/01/rdf-schema#label> "isRecommended" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#isVerified
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#isVerified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#isVerified> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#isVerified> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#isVerified> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#isVerified> <http://www.w3.org/2000/01/rdf-schema#comment> "The element is verified" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#isVerified> <http://www.w3.org/2000/01/rdf-schema#label> "isVerified" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/ontology/Airline
+<http://dbpedia.org/ontology/Airline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/Airline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportCompany> .
+<http://dbpedia.org/ontology/Airline> <http://www.w3.org/2000/01/rdf-schema#comment> "An airline company" .
+<http://dbpedia.org/ontology/Airline> <http://www.w3.org/2000/01/rdf-schema#label> "Airline company" .
+# 
+# http://dbpedia.org/ontology/Airport
+<http://dbpedia.org/ontology/Airport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/Airport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://dbpedia.org/ontology/Airport> <http://www.w3.org/2000/01/rdf-schema#comment> "An airport" .
+<http://dbpedia.org/ontology/Airport> <http://www.w3.org/2000/01/rdf-schema#label> "Airport" .
+# 
+# http://dbpedia.org/ontology/Country
+<http://dbpedia.org/ontology/Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/Country> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://dbpedia.org/ontology/Country> <http://www.w3.org/2000/01/rdf-schema#comment> "A country" .
+<http://dbpedia.org/ontology/Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#AirBusPlain
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#AirBusPlain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#AirBusPlain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Plain> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#AirBusPlain> <http://www.w3.org/2000/01/rdf-schema#comment> "An airbus plain" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#AirBusPlain> <http://www.w3.org/2000/01/rdf-schema#label> "Airbus plain" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Boat
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Boat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Boat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Transport> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Boat> <http://www.w3.org/2000/01/rdf-schema#comment> "Boat transport" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Boat> <http://www.w3.org/2000/01/rdf-schema#label> "Boat" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoatCompany
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoatCompany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoatCompany> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportCompany> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoatCompany> <http://www.w3.org/2000/01/rdf-schema#comment> "A transport boat company" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoatCompany> <http://www.w3.org/2000/01/rdf-schema#label> "Transport boat company" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoatTrip
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoatTrip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoatTrip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoatTrip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#onClass> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Boat> .
+_:genid14 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransport> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoatTrip> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#BusTrip> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoatTrip> <http://www.w3.org/2000/01/rdf-schema#comment> "A Boat Trip" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoatTrip> <http://www.w3.org/2000/01/rdf-schema#label> "Boat trip" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoeingPlain
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoeingPlain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoeingPlain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Plain> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoeingPlain> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Train> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoeingPlain> <http://www.w3.org/2000/01/rdf-schema#comment> "A Boeing plain" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoeingPlain> <http://www.w3.org/2000/01/rdf-schema#label> "Boeing plain" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Bus
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Bus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Bus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Transport> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Bus> <http://www.w3.org/2000/01/rdf-schema#comment> "Bus transport" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Bus> <http://www.w3.org/2000/01/rdf-schema#label> "Bus" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#BusCompany
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#BusCompany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#BusCompany> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportCompany> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#BusCompany> <http://www.w3.org/2000/01/rdf-schema#comment> "A transport bus company" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#BusCompany> <http://www.w3.org/2000/01/rdf-schema#label> "Transport bus company" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#BusTrip
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#BusTrip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#BusTrip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#BusTrip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#onClass> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Bus> .
+_:genid15 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransport> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#BusTrip> <http://www.w3.org/2000/01/rdf-schema#comment> "A Bus Trip" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#BusTrip> <http://www.w3.org/2000/01/rdf-schema#label> "Bus trip" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#BusinessPassenger
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#BusinessPassenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#BusinessPassenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#BusinessPassenger> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#LeisurePassenger> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#BusinessPassenger> <http://www.w3.org/2000/01/rdf-schema#comment> "Passenger who travel for work" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#BusinessPassenger> <http://www.w3.org/2000/01/rdf-schema#label> "Bussines passenger" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Company
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Company> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Company> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Company> <http://www.w3.org/2000/01/rdf-schema#comment> "A company" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Company> <http://www.w3.org/2000/01/rdf-schema#label> "Company" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Couple
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Couple> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Couple> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#LeisurePassenger> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Couple> <http://www.w3.org/2000/01/rdf-schema#comment> "Passenger who travel with his/her couple" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Couple> <http://www.w3.org/2000/01/rdf-schema#label> "Couple passenger" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Family
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Family> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#LeisurePassenger> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Family> <http://www.w3.org/2000/01/rdf-schema#comment> "Passenger who travel with his/her family" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Family> <http://www.w3.org/2000/01/rdf-schema#label> "Family passenger" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Flight
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Flight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#onClass> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Plain> .
+_:genid16 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransport> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Flight> <http://www.w3.org/2000/01/rdf-schema#comment> "A Flight" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Flight> <http://www.w3.org/2000/01/rdf-schema#label> "Flight" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#HighQuality
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#HighQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#HighQuality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#SurveyResults> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#HighQuality> <http://www.w3.org/2000/01/rdf-schema#comment> "High quality result" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#HighQuality> <http://www.w3.org/2000/01/rdf-schema#label> "High quality" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#LeisurePassenger
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#LeisurePassenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#LeisurePassenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#LeisurePassenger> <http://www.w3.org/2000/01/rdf-schema#comment> "Passenger who travel for leisure" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#LeisurePassenger> <http://www.w3.org/2000/01/rdf-schema#label> "Leisure passenger" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#LowQuality
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#LowQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#LowQuality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#SurveyResults> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#LowQuality> <http://www.w3.org/2000/01/rdf-schema#comment> "Low quality result" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#LowQuality> <http://www.w3.org/2000/01/rdf-schema#label> "Low quality" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#MediumQuality
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#MediumQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#MediumQuality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#SurveyResults> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#MediumQuality> <http://www.w3.org/2000/01/rdf-schema#comment> "Medium quality result" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#MediumQuality> <http://www.w3.org/2000/01/rdf-schema#label> "Medium quality" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger> <http://www.w3.org/2000/01/rdf-schema#comment> "A passenger" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger> <http://www.w3.org/2000/01/rdf-schema#label> "Passenger" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Plain
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Plain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Plain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Transport> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Plain> <http://www.w3.org/2000/01/rdf-schema#comment> "Plain transport" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Plain> <http://www.w3.org/2000/01/rdf-schema#label> "Plain" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Seat
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Seat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Seat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Seat> <http://www.w3.org/2000/01/rdf-schema#comment> "A concret seat of an event" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Seat> <http://www.w3.org/2000/01/rdf-schema#label> "Seat" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Solo
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Solo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Solo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#LeisurePassenger> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Solo> <http://www.w3.org/2000/01/rdf-schema#comment> "Passenger who travel alone" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Solo> <http://www.w3.org/2000/01/rdf-schema#label> "Solo passenger" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey> <http://www.w3.org/2000/01/rdf-schema#comment> "A survey" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey> <http://www.w3.org/2000/01/rdf-schema#label> "Survey" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#SurveyResults
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#SurveyResults> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#SurveyResults> <http://www.w3.org/2000/01/rdf-schema#comment> "The Survey Results" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#SurveyResults> <http://www.w3.org/2000/01/rdf-schema#label> "SurveyResults" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Train
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Train> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Train> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Transport> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Train> <http://www.w3.org/2000/01/rdf-schema#comment> "A Train" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Train> <http://www.w3.org/2000/01/rdf-schema#label> "Train" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#TrainCompany
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#TrainCompany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#TrainCompany> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportCompany> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#TrainCompany> <http://www.w3.org/2000/01/rdf-schema#comment> "A train transport company" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#TrainCompany> <http://www.w3.org/2000/01/rdf-schema#label> "Train transport company" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#TrainTrip
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#TrainTrip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#TrainTrip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#TrainTrip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#onClass> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Train> .
+_:genid17 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransport> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#TrainTrip> <http://www.w3.org/2000/01/rdf-schema#comment> "A Train trip" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#TrainTrip> <http://www.w3.org/2000/01/rdf-schema#label> "Train trip" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Transport
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Transport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Transport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Transport> <http://www.w3.org/2000/01/rdf-schema#comment> "A mean of transport" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Transport> <http://www.w3.org/2000/01/rdf-schema#label> "Transport" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportCompany
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportCompany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportCompany> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Company> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportCompany> <http://www.w3.org/2000/01/rdf-schema#comment> "A transport company" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportCompany> <http://www.w3.org/2000/01/rdf-schema#label> "Transport company" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportSeat
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportSeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportSeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Seat> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportSeat> <http://www.w3.org/2000/01/rdf-schema#comment> "A concret seat of a trip" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportSeat> <http://www.w3.org/2000/01/rdf-schema#label> "Transport Seat" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip> <http://www.w3.org/2000/01/rdf-schema#comment> "A concrete trip for a passenger" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip> <http://www.w3.org/2000/01/rdf-schema#label> "Trip" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#TripSurvey
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#TripSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#TripSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#TripSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/2002/07/owl#onClass> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip> .
+_:genid18 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSurveyedTrip> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#TripSurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "Survey of a trip" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#TripSurvey> <http://www.w3.org/2000/01/rdf-schema#label> "Trip survey" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#A350
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#A350> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#A350> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#AirBusPlain> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#A380
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#A380> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#A380> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#AirBusPlain> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#A380-800
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#A380-800> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#A380-800> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#AirBusPlain> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Albania
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Albania> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Albania> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Country> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Alicante
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Alicante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Alicante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Airport> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Australia
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Australia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Australia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Country> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Belfast
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Belfast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Belfast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Airport> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Belfast-Alicante
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Belfast-Alicante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Belfast-Alicante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Flight> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Belfast-Alicante> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDestination> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Alicante> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Belfast-Alicante> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasOrigin> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Belfast> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Belfast-Alicante> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasPassenger> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger4> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Belfast-Alicante> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeat> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Economy> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Boeing_737
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Boeing_737> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Boeing_737> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoeingPlain> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Boeing_737_900
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Boeing_737_900> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Boeing_737_900> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoeingPlain> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Business
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Business> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Business> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportSeat> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Business> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeatType> "BusinessClass" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Canada
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Country> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Denmark
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Denmark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Denmark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Country> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Doha
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Doha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Doha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Airport> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Doha-Montreal
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Doha-Montreal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Doha-Montreal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Flight> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Doha-Montreal> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDestination> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Montreal> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Doha-Montreal> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasOrigin> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Doha> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Doha-Montreal> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasPassenger> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger1> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Doha-Montreal> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeat> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Business> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Economy
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Economy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Economy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportSeat> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Economy> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeatType> "EconomyClass" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Faro
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Faro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Faro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Airport> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Faro-Luton
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Faro-Luton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Faro-Luton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Flight> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Faro-Luton> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDestination> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Luton> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Faro-Luton> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasOrigin> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Faro> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Faro-Luton> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasPassenger> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger3> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Faro-Luton> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeat> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Economy> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Faro-Luton> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransport> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Boeing_737_900> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#First_Class
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#First_Class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#First_Class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportSeat> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#First_Class> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeatType> "First Class" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Germany
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Germany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Germany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Country> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Israel
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Israel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Israel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Country> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#London_Heathrow
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#London_Heathrow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#London_Heathrow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Airport> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Luton
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Luton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Luton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Airport> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Luton> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransport> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Boeing_737_900> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Montreal
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Montreal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Montreal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Airport> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger0
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Solo> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger0> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasCountry> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#United_Kingdom> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger1
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Couple> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger1> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasCountry> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Canada> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger3
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Family> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger3> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasCountry> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#United_Kingdom> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger4
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Couple> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger4> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasCountry> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#United_Kingdom> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Perth
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Perth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Perth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Airport> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Premium_Economy
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Premium_Economy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Premium_Economy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportSeat> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Premium_Economy> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeatType> "Premium Economy" .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Qatar
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Qatar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Qatar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Airline> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Ryanair
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Ryanair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Ryanair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Airline> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey0
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#TripSurvey> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey0> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSurveyedTrip> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Faro-Luton> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey0> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasComment> "Flew back from Faro to London Luton Friday 2nd February. Ryanair in both directions was bang on time and smooth flights in both directions.  We always sit in Front for more space and this was very comfortable for just under a 3 hour flight. The cabin crew were polite and efficient with nice sense of humour especially and engagement especially Ethan and his female colleague at the front section. For their human touch [unlike sometimes the stand offish BA crews] merit a 10/10 marking" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey0> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDatePublished> "2024-02-03T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey0> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasId> "0"^^<http://www.w3.org/2001/XMLSchema#unsignedInt> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey0> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasRating> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey0> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTitle> "bang on time and smooth flights" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey0> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#isRecommended> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey0> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#isVerified> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey1
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#TripSurvey> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey1> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSurveyedTrip> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Belfast-Alicante> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey1> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasComment> "Another good affordable flight with Ryanair. On time, pleasant staff at check-in and on board. We use Ryanair as our first choice on every flight we take." .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey1> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDatePublished> "2024-01-26T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey1> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasId> "1"^^<http://www.w3.org/2001/XMLSchema#unsignedInt> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey1> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasRating> "10"^^<http://www.w3.org/2001/XMLSchema#unsignedInt> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey1> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTitle> "Another good affordable flight" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey1> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#isRecommended> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey1> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#isVerified> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey3
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#TripSurvey> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey3> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSurveyedTrip> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Tokyo-London> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey3> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasComment> "The delay of my flight from Haneda to Doha caused a bit of chaos upon arrival. Despite my efforts to reach the gate promptly, I was denied boarding due to luggage issues, and the lack of assistance added to the frustration. I paid for an Economy Comfort package, which was supposed to include an aisle seat. However, upon boarding, I was informed that no aisle seats were available, despite assurances beforehand. Additionally, my luggage tag was lost during the boarding pass exchange, leading to further uncertainty upon arrival in London. What was meant to be a 19-hour journey turned into a 27-hour ordeal. When I requested assistance from staff regarding a re-arrangement they promised to get back to me within 5-10 minutes, but no one followed up until I reached out again. The security queue at Heathrow on departure from the UK was incredibly long, with a wait time of about 1.5 hours just to get through. Overall, while the crew onboard was courteous and provided great service, the experience was marred by these inconveniences." .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey3> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDatePublished> "2024-03-02T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey3> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasId> "3"^^<http://www.w3.org/2001/XMLSchema#unsignedInt> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey3> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasRating> "1"^^<http://www.w3.org/2001/XMLSchema#unsignedInt> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey3> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTitle> "marred by inconveniences" .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey3> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#isRecommended> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey3> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#isVerified> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Tokyo
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Tokyo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Tokyo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Airport> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#Tokyo-London
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Tokyo-London> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Tokyo-London> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Flight> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Tokyo-London> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDestination> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#London_Heathrow> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Tokyo-London> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasOrigin> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Tokyo> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Tokyo-London> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasPassenger> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger0> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#Tokyo-London> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeat> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Economy> .
+# 
+# http://www.uoc.edu/ontologies/vabad/airlinesurvey#United_Kingdom
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#United_Kingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey#United_Kingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Country> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid19 <http://www.w3.org/2002/07/owl#members> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Train> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Plain> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Bus> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Boat> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid24 <http://www.w3.org/2002/07/owl#members> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#TrainTrip> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Flight> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoatTrip> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid28 <http://www.w3.org/2002/07/owl#members> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Solo> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Family> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#Couple> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid32 <http://www.w3.org/2002/07/owl#members> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#MediumQuality> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#LowQuality> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.uoc.edu/ontologies/vabad/airlinesurvey#HighQuality> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

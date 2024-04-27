@@ -1,0 +1,864 @@
+@prefix : <http://www.uoc.edu/ontologies/vabad/airlinesurvey#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.uoc.edu/ontologies/vabad/airlinesurvey#> .
+
+<http://www.uoc.edu/ontologies/vabad/airlinesurvey> rdf:type owl:Ontology ;
+                                                     owl:versionIRI <http://www.uoc.edu/ontologies/vabad/airlinesurvey/1.0.0> ;
+                                                     owl:imports <http://dbpedia.org/ontology/> ;
+                                                     <http://creativecommons.org/ns#license> "Student Work" ;
+                                                     <http://purl.org/dc/terms/creator> "Vanesa Abadías" ;
+                                                     <http://purl.org/dc/terms/description> "An ontology about airline customer satisfaction survey" ;
+                                                     <http://purl.org/dc/terms/license> "A student work" ;
+                                                     <http://purl.org/dc/terms/title> "Airline customer satisfaction survey" ;
+                                                     rdfs:comment "An ontology about airline customer satisfaction survey" ;
+                                                     rdfs:isDefinedBy "Vanesa Abadías" ;
+                                                     rdfs:label "Airline customer satisfaction survey" ;
+                                                     owl:versionInfo 1 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasCompany
+:hasCompany rdf:type owl:ObjectProperty ;
+            owl:inverseOf :hasTransportOfCompany ;
+            rdfs:domain :Transport ;
+            rdfs:range :Company ;
+            rdfs:comment "Has a company" ;
+            rdfs:label "hasCompany" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasCountry
+:hasCountry rdf:type owl:ObjectProperty ;
+            owl:inverseOf :hasPassengerCountry ;
+            rdfs:domain :Passenger ;
+            rdfs:range <http://dbpedia.org/ontology/Country> ;
+            rdfs:comment "The element has a Country" ;
+            rdfs:label "hasCountry" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDestination
+:hasDestination rdf:type owl:ObjectProperty ;
+                rdfs:domain :Flight ;
+                rdfs:range <http://dbpedia.org/ontology/Airport> ;
+                rdfs:comment "The element has a Destination" ;
+                rdfs:label "hasDestination" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasFlightDestination
+:hasFlightDestination rdf:type owl:ObjectProperty ;
+                      rdfs:domain <http://dbpedia.org/ontology/Airport> ;
+                      rdfs:range :Flight ;
+                      rdfs:comment "The Destination of the flight" ;
+                      rdfs:label "hasFlightDestination" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasFlightOrigin
+:hasFlightOrigin rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:domain <http://dbpedia.org/ontology/Airport> ;
+                 rdfs:range :Flight ;
+                 rdfs:comment "The origin of the flight" ;
+                 rdfs:label "hasFlightOrigin" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasOrigin
+:hasOrigin rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:domain :Flight ;
+           rdfs:range <http://dbpedia.org/ontology/Airport> ;
+           rdfs:comment "The element has a Origin" ;
+           rdfs:label "hasOrigin" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasPassenger
+:hasPassenger rdf:type owl:ObjectProperty ;
+              owl:inverseOf :hasTripOfPassenger ;
+              rdfs:domain :Trip ;
+              rdfs:range :Passenger ;
+              rdfs:comment "The trip has a Passenger" ;
+              rdfs:label "hasPassenger" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasPassengerCountry
+:hasPassengerCountry rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     rdfs:domain <http://dbpedia.org/ontology/Country> ;
+                     rdfs:range :Passenger ;
+                     rdfs:comment "The country has passenger who travel" ;
+                     rdfs:label "hasPassengerCountry" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasResult
+:hasResult rdf:type owl:ObjectProperty ;
+           rdfs:domain :Survey ;
+           rdfs:range :SurveyResults ;
+           rdfs:comment "The result of a survey" ;
+           rdfs:label "hasResult" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeat
+:hasSeat rdf:type owl:ObjectProperty ;
+         owl:inverseOf :hasTripOfSeat ;
+         rdfs:domain :Trip ;
+         rdfs:range :TransportSeat ;
+         rdfs:comment "Te trip has aSeat" ;
+         rdfs:label "hasSeat" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSurvey
+:hasSurvey rdf:type owl:ObjectProperty ;
+           rdfs:domain :Trip ;
+           rdfs:range :TripSurvey ;
+           rdfs:comment "The element has a survey" ;
+           rdfs:label "hasSurvey" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSurveyedTrip
+:hasSurveyedTrip rdf:type owl:ObjectProperty ;
+                 rdfs:domain :TripSurvey ;
+                 rdfs:range :Trip ;
+                 rdfs:comment "The element has a trip" ;
+                 rdfs:label "hasSurveyedTrip" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransport
+:hasTransport rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain :Trip ;
+              rdfs:range :Transport ;
+              rdfs:comment "The element has a transport" ;
+              rdfs:label "hasTransport" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTransportOfCompany
+:hasTransportOfCompany rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       rdfs:domain :Company ;
+                       rdfs:range :Transport ;
+                       rdfs:comment "Transport belonging to a company" ;
+                       rdfs:label "hasTransportOfCompany" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTrip
+:hasTrip rdf:type owl:ObjectProperty ;
+         rdfs:domain :Transport ;
+         rdfs:range :Trip ;
+         rdfs:comment "The transport has a trip" ;
+         rdfs:label "hasTrip" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTripOfPassenger
+:hasTripOfPassenger rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty ;
+                    rdfs:domain :Passenger ;
+                    rdfs:range :Trip ;
+                    rdfs:comment "The trip o a passenger" ;
+                    rdfs:label "hasTripOfPassenger" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTripOfSeat
+:hasTripOfSeat rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:domain :TransportSeat ;
+               rdfs:range :Trip ;
+               rdfs:comment "The trip of the seat" ;
+               rdfs:label "hasTripOfSeat" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasComment
+:hasComment rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Survey ;
+            rdfs:range xsd:string ;
+            rdfs:comment "The element has a Comment" ;
+            rdfs:label "hasComment" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDate
+:hasDate rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Trip ;
+         rdfs:range xsd:dateTime ;
+         rdfs:comment "The element has a Date" ;
+         rdfs:label "hasFlownDate" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasDatePublished
+:hasDatePublished rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Survey ;
+                  rdfs:range xsd:dateTime ;
+                  rdfs:comment "has Published Date" ;
+                  rdfs:label "hasPublishedDate" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasId
+:hasId rdf:type owl:DatatypeProperty ,
+                owl:FunctionalProperty ;
+       rdfs:domain :Survey ;
+       rdfs:range xsd:unsignedInt ;
+       rdfs:comment "The element has a Id" ;
+       rdfs:label "hasId" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasRating
+:hasRating rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Survey ;
+           rdfs:range [ rdf:type rdfs:Datatype ;
+                        owl:onDatatype xsd:int ;
+                        owl:withRestrictions ( [ xsd:minExclusive "0"^^xsd:int
+                                               ]
+                                               [ xsd:maxInclusive "10"^^xsd:int
+                                               ]
+                                             )
+                      ] ;
+           rdfs:comment "The element has a Rating" ;
+           rdfs:label "hasRating" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeatId
+:hasSeatId rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :Seat ;
+           rdfs:range xsd:string ;
+           rdfs:comment "A seat id" ;
+           rdfs:label "hasSeatId" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasSeatType
+:hasSeatType rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :Seat ;
+             rdfs:range [ rdf:type rdfs:Datatype ;
+                          owl:intersectionOf ( xsd:string
+                                               [ rdf:type rdfs:Datatype ;
+                                                 owl:oneOf [ rdf:type rdf:List ;
+                                                             rdf:first "BusinessClass" ;
+                                                             rdf:rest [ rdf:type rdf:List ;
+                                                                        rdf:first "EconomyClass" ;
+                                                                        rdf:rest [ rdf:type rdf:List ;
+                                                                                   rdf:first "First Class" ;
+                                                                                   rdf:rest [ rdf:type rdf:List ;
+                                                                                              rdf:first "Premium Economy" ;
+                                                                                              rdf:rest rdf:nil
+                                                                                            ]
+                                                                                 ]
+                                                                      ]
+                                                           ]
+                                               ]
+                                             )
+                        ] ;
+             rdfs:comment "The element has seat type" ;
+             rdfs:label "hasSeatType" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#hasTitle
+:hasTitle rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Survey ;
+          rdfs:range xsd:string ;
+          rdfs:comment "The element has a Title" ;
+          rdfs:label "hasTitle" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#isRecommended
+:isRecommended rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Survey ;
+               rdfs:range xsd:boolean ;
+               rdfs:comment "The element is Recommended" ;
+               rdfs:label "isRecommended" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#isVerified
+:isVerified rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain :Survey ;
+            rdfs:range xsd:boolean ;
+            rdfs:comment "The element is verified" ;
+            rdfs:label "isVerified" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://dbpedia.org/ontology/Airline
+<http://dbpedia.org/ontology/Airline> rdf:type owl:Class ;
+                                      rdfs:subClassOf :TransportCompany ;
+                                      rdfs:comment "An airline company" ;
+                                      rdfs:label "Airline company" .
+
+
+###  http://dbpedia.org/ontology/Airport
+<http://dbpedia.org/ontology/Airport> rdf:type owl:Class ;
+                                      rdfs:subClassOf owl:Thing ;
+                                      rdfs:comment "An airport" ;
+                                      rdfs:label "Airport" .
+
+
+###  http://dbpedia.org/ontology/Country
+<http://dbpedia.org/ontology/Country> rdf:type owl:Class ;
+                                      rdfs:subClassOf owl:Thing ;
+                                      rdfs:comment "A country" ;
+                                      rdfs:label "Country" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#AirBusPlain
+:AirBusPlain rdf:type owl:Class ;
+             rdfs:subClassOf :Plain ;
+             rdfs:comment "An airbus plain" ;
+             rdfs:label "Airbus plain" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Boat
+:Boat rdf:type owl:Class ;
+      rdfs:subClassOf :Transport ;
+      rdfs:comment "Boat transport" ;
+      rdfs:label "Boat" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoatCompany
+:BoatCompany rdf:type owl:Class ;
+             rdfs:subClassOf :TransportCompany ;
+             rdfs:comment "A transport boat company" ;
+             rdfs:label "Transport boat company" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoatTrip
+:BoatTrip rdf:type owl:Class ;
+          rdfs:subClassOf :Trip ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasTransport ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Boat
+                          ] ;
+          owl:disjointWith :BusTrip ;
+          rdfs:comment "A Boat Trip" ;
+          rdfs:label "Boat trip" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#BoeingPlain
+:BoeingPlain rdf:type owl:Class ;
+             rdfs:subClassOf :Plain ;
+             owl:disjointWith :Train ;
+             rdfs:comment "A Boeing plain" ;
+             rdfs:label "Boeing plain" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Bus
+:Bus rdf:type owl:Class ;
+     rdfs:subClassOf :Transport ;
+     rdfs:comment "Bus transport" ;
+     rdfs:label "Bus" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#BusCompany
+:BusCompany rdf:type owl:Class ;
+            rdfs:subClassOf :TransportCompany ;
+            rdfs:comment "A transport bus company" ;
+            rdfs:label "Transport bus company" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#BusTrip
+:BusTrip rdf:type owl:Class ;
+         rdfs:subClassOf :Trip ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasTransport ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Bus
+                         ] ;
+         rdfs:comment "A Bus Trip" ;
+         rdfs:label "Bus trip" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#BusinessPassenger
+:BusinessPassenger rdf:type owl:Class ;
+                   rdfs:subClassOf :Passenger ;
+                   owl:disjointWith :LeisurePassenger ;
+                   rdfs:comment "Passenger who travel for work" ;
+                   rdfs:label "Bussines passenger" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Company
+:Company rdf:type owl:Class ;
+         rdfs:subClassOf owl:Thing ;
+         rdfs:comment "A company" ;
+         rdfs:label "Company" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Couple
+:Couple rdf:type owl:Class ;
+        rdfs:subClassOf :LeisurePassenger ;
+        rdfs:comment "Passenger who travel with his/her couple" ;
+        rdfs:label "Couple passenger" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Family
+:Family rdf:type owl:Class ;
+        rdfs:subClassOf :LeisurePassenger ;
+        rdfs:comment "Passenger who travel with his/her family" ;
+        rdfs:label "Family passenger" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Flight
+:Flight rdf:type owl:Class ;
+        rdfs:subClassOf :Trip ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasTransport ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :Plain
+                        ] ;
+        rdfs:comment "A Flight" ;
+        rdfs:label "Flight" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#HighQuality
+:HighQuality rdf:type owl:Class ;
+             rdfs:subClassOf :SurveyResults ;
+             rdfs:comment "High quality result" ;
+             rdfs:label "High quality" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#LeisurePassenger
+:LeisurePassenger rdf:type owl:Class ;
+                  rdfs:subClassOf :Passenger ;
+                  rdfs:comment "Passenger who travel for leisure" ;
+                  rdfs:label "Leisure passenger" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#LowQuality
+:LowQuality rdf:type owl:Class ;
+            rdfs:subClassOf :SurveyResults ;
+            rdfs:comment "Low quality result" ;
+            rdfs:label "Low quality" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#MediumQuality
+:MediumQuality rdf:type owl:Class ;
+               rdfs:subClassOf :SurveyResults ;
+               rdfs:comment "Medium quality result" ;
+               rdfs:label "Medium quality" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger
+:Passenger rdf:type owl:Class ;
+           rdfs:subClassOf owl:Thing ;
+           rdfs:comment "A passenger" ;
+           rdfs:label "Passenger" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Plain
+:Plain rdf:type owl:Class ;
+       rdfs:subClassOf :Transport ;
+       rdfs:comment "Plain transport" ;
+       rdfs:label "Plain" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Seat
+:Seat rdf:type owl:Class ;
+      rdfs:subClassOf owl:Thing ;
+      rdfs:comment "A concret seat of an event" ;
+      rdfs:label "Seat" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Solo
+:Solo rdf:type owl:Class ;
+      rdfs:subClassOf :LeisurePassenger ;
+      rdfs:comment "Passenger who travel alone" ;
+      rdfs:label "Solo passenger" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey
+:Survey rdf:type owl:Class ;
+        rdfs:subClassOf owl:Thing ;
+        rdfs:comment "A survey" ;
+        rdfs:label "Survey" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#SurveyResults
+:SurveyResults rdf:type owl:Class ;
+               rdfs:comment "The Survey Results" ;
+               rdfs:label "SurveyResults" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Train
+:Train rdf:type owl:Class ;
+       rdfs:subClassOf :Transport ;
+       rdfs:comment "A Train" ;
+       rdfs:label "Train" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#TrainCompany
+:TrainCompany rdf:type owl:Class ;
+              rdfs:subClassOf :TransportCompany ;
+              rdfs:comment "A train transport company" ;
+              rdfs:label "Train transport company" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#TrainTrip
+:TrainTrip rdf:type owl:Class ;
+           rdfs:subClassOf :Trip ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasTransport ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :Train
+                           ] ;
+           rdfs:comment "A Train trip" ;
+           rdfs:label "Train trip" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Transport
+:Transport rdf:type owl:Class ;
+           rdfs:subClassOf owl:Thing ;
+           rdfs:comment "A mean of transport" ;
+           rdfs:label "Transport" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportCompany
+:TransportCompany rdf:type owl:Class ;
+                  rdfs:subClassOf :Company ;
+                  rdfs:comment "A transport company" ;
+                  rdfs:label "Transport company" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#TransportSeat
+:TransportSeat rdf:type owl:Class ;
+               rdfs:subClassOf :Seat ;
+               rdfs:comment "A concret seat of a trip" ;
+               rdfs:label "Transport Seat" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Trip
+:Trip rdf:type owl:Class ;
+      rdfs:subClassOf owl:Thing ;
+      rdfs:comment "A concrete trip for a passenger" ;
+      rdfs:label "Trip" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#TripSurvey
+:TripSurvey rdf:type owl:Class ;
+            rdfs:subClassOf :Survey ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasSurveyedTrip ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass :Trip
+                            ] ;
+            rdfs:comment "Survey of a trip" ;
+            rdfs:label "Trip survey" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#A350
+:A350 rdf:type owl:NamedIndividual ,
+               :AirBusPlain .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#A380
+:A380 rdf:type owl:NamedIndividual ,
+               :AirBusPlain .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#A380-800
+:A380-800 rdf:type owl:NamedIndividual ,
+                   :AirBusPlain .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Albania
+:Albania rdf:type owl:NamedIndividual ,
+                  <http://dbpedia.org/ontology/Country> .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Alicante
+:Alicante rdf:type owl:NamedIndividual ,
+                   <http://dbpedia.org/ontology/Airport> .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Australia
+:Australia rdf:type owl:NamedIndividual ,
+                    <http://dbpedia.org/ontology/Country> .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Belfast
+:Belfast rdf:type owl:NamedIndividual ,
+                  <http://dbpedia.org/ontology/Airport> .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Belfast-Alicante
+:Belfast-Alicante rdf:type owl:NamedIndividual ,
+                           :Flight ;
+                  :hasDestination :Alicante ;
+                  :hasOrigin :Belfast ;
+                  :hasPassenger :Passenger4 ;
+                  :hasSeat :Economy .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Boeing_737
+:Boeing_737 rdf:type owl:NamedIndividual ,
+                     :BoeingPlain .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Boeing_737_900
+:Boeing_737_900 rdf:type owl:NamedIndividual ,
+                         :BoeingPlain .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Business
+:Business rdf:type owl:NamedIndividual ,
+                   :TransportSeat ;
+          :hasSeatType "BusinessClass" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Canada
+:Canada rdf:type owl:NamedIndividual ,
+                 <http://dbpedia.org/ontology/Country> .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Denmark
+:Denmark rdf:type owl:NamedIndividual ,
+                  <http://dbpedia.org/ontology/Country> .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Doha
+:Doha rdf:type owl:NamedIndividual ,
+               <http://dbpedia.org/ontology/Airport> .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Doha-Montreal
+:Doha-Montreal rdf:type owl:NamedIndividual ,
+                        :Flight ;
+               :hasDestination :Montreal ;
+               :hasOrigin :Doha ;
+               :hasPassenger :Passenger1 ;
+               :hasSeat :Business .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Economy
+:Economy rdf:type owl:NamedIndividual ,
+                  :TransportSeat ;
+         :hasSeatType "EconomyClass" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Faro
+:Faro rdf:type owl:NamedIndividual ,
+               <http://dbpedia.org/ontology/Airport> .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Faro-Luton
+:Faro-Luton rdf:type owl:NamedIndividual ,
+                     :Flight ;
+            :hasDestination :Luton ;
+            :hasOrigin :Faro ;
+            :hasPassenger :Passenger3 ;
+            :hasSeat :Economy ;
+            :hasTransport :Boeing_737_900 .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#First_Class
+:First_Class rdf:type owl:NamedIndividual ,
+                      :TransportSeat ;
+             :hasSeatType "First Class" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Germany
+:Germany rdf:type owl:NamedIndividual ,
+                  <http://dbpedia.org/ontology/Country> .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Israel
+:Israel rdf:type owl:NamedIndividual ,
+                 <http://dbpedia.org/ontology/Country> .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#London_Heathrow
+:London_Heathrow rdf:type owl:NamedIndividual ,
+                          <http://dbpedia.org/ontology/Airport> .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Luton
+:Luton rdf:type owl:NamedIndividual ,
+                <http://dbpedia.org/ontology/Airport> ;
+       :hasTransport :Boeing_737_900 .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Montreal
+:Montreal rdf:type owl:NamedIndividual ,
+                   <http://dbpedia.org/ontology/Airport> .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger0
+:Passenger0 rdf:type owl:NamedIndividual ,
+                     :Solo ;
+            :hasCountry :United_Kingdom .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger1
+:Passenger1 rdf:type owl:NamedIndividual ,
+                     :Couple ;
+            :hasCountry :Canada .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger3
+:Passenger3 rdf:type owl:NamedIndividual ,
+                     :Family ;
+            :hasCountry :United_Kingdom .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Passenger4
+:Passenger4 rdf:type owl:NamedIndividual ,
+                     :Couple ;
+            :hasCountry :United_Kingdom .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Perth
+:Perth rdf:type owl:NamedIndividual ,
+                <http://dbpedia.org/ontology/Airport> .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Premium_Economy
+:Premium_Economy rdf:type owl:NamedIndividual ,
+                          :TransportSeat ;
+                 :hasSeatType "Premium Economy" .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Qatar
+:Qatar rdf:type owl:NamedIndividual ,
+                <http://dbpedia.org/ontology/Airline> .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Ryanair
+:Ryanair rdf:type owl:NamedIndividual ,
+                  <http://dbpedia.org/ontology/Airline> .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey0
+:Survey0 rdf:type owl:NamedIndividual ,
+                  :TripSurvey ;
+         :hasSurveyedTrip :Faro-Luton ;
+         :hasComment "Flew back from Faro to London Luton Friday 2nd February. Ryanair in both directions was bang on time and smooth flights in both directions.  We always sit in Front for more space and this was very comfortable for just under a 3 hour flight. The cabin crew were polite and efficient with nice sense of humour especially and engagement especially Ethan and his female colleague at the front section. For their human touch [unlike sometimes the stand offish BA crews] merit a 10/10 marking" ;
+         :hasDatePublished "2024-02-03T00:00:00"^^xsd:dateTime ;
+         :hasId "0"^^xsd:unsignedInt ;
+         :hasRating 10 ;
+         :hasTitle "bang on time and smooth flights" ;
+         :isRecommended "true"^^xsd:boolean ;
+         :isVerified "false"^^xsd:boolean .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey1
+:Survey1 rdf:type owl:NamedIndividual ,
+                  :TripSurvey ;
+         :hasSurveyedTrip :Belfast-Alicante ;
+         :hasComment "Another good affordable flight with Ryanair. On time, pleasant staff at check-in and on board. We use Ryanair as our first choice on every flight we take." ;
+         :hasDatePublished "2024-01-26T00:00:00"^^xsd:dateTime ;
+         :hasId "1"^^xsd:unsignedInt ;
+         :hasRating "10"^^xsd:unsignedInt ;
+         :hasTitle "Another good affordable flight" ;
+         :isRecommended "true"^^xsd:boolean ;
+         :isVerified "false"^^xsd:boolean .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Survey3
+:Survey3 rdf:type owl:NamedIndividual ,
+                  :TripSurvey ;
+         :hasSurveyedTrip :Tokyo-London ;
+         :hasComment "The delay of my flight from Haneda to Doha caused a bit of chaos upon arrival. Despite my efforts to reach the gate promptly, I was denied boarding due to luggage issues, and the lack of assistance added to the frustration. I paid for an Economy Comfort package, which was supposed to include an aisle seat. However, upon boarding, I was informed that no aisle seats were available, despite assurances beforehand. Additionally, my luggage tag was lost during the boarding pass exchange, leading to further uncertainty upon arrival in London. What was meant to be a 19-hour journey turned into a 27-hour ordeal. When I requested assistance from staff regarding a re-arrangement they promised to get back to me within 5-10 minutes, but no one followed up until I reached out again. The security queue at Heathrow on departure from the UK was incredibly long, with a wait time of about 1.5 hours just to get through. Overall, while the crew onboard was courteous and provided great service, the experience was marred by these inconveniences." ;
+         :hasDatePublished "2024-03-02T00:00:00"^^xsd:dateTime ;
+         :hasId "3"^^xsd:unsignedInt ;
+         :hasRating "1"^^xsd:unsignedInt ;
+         :hasTitle "marred by inconveniences" ;
+         :isRecommended "false"^^xsd:boolean ;
+         :isVerified "false"^^xsd:boolean .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Tokyo
+:Tokyo rdf:type owl:NamedIndividual ,
+                <http://dbpedia.org/ontology/Airport> .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#Tokyo-London
+:Tokyo-London rdf:type owl:NamedIndividual ,
+                       :Flight ;
+              :hasDestination :London_Heathrow ;
+              :hasOrigin :Tokyo ;
+              :hasPassenger :Passenger0 ;
+              :hasSeat :Economy .
+
+
+###  http://www.uoc.edu/ontologies/vabad/airlinesurvey#United_Kingdom
+:United_Kingdom rdf:type owl:NamedIndividual ,
+                         <http://dbpedia.org/ontology/Country> .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Boat
+                :Bus
+                :Plain
+                :Train
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BoatTrip
+                :Flight
+                :TrainTrip
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Couple
+                :Family
+                :Solo
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :HighQuality
+                :LowQuality
+                :MediumQuality
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
